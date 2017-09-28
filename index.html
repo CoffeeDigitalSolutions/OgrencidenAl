@@ -1,251 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Ogrenciden Al !</title>
-   
 
 
 
 
-   <link href="Assets/css/flat-ui.min.css" rel="stylesheet" />
-<link href="Assets/css/bootstrap.min.css" rel="stylesheet" />
-<link href="Assets/css/font-awesome.min.css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-    
-    
+
+    <link href="Assets/css/flat-ui.min.css" rel="stylesheet" />
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Assets/css/bootstrap-social.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
+
 </head>
 
 <body>
 
-   
- <nav style=" margin-bottom:5px;" class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+    <nav style=" margin-bottom:5px;" class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Ogrenciden Al</a>
-  </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    
-    <div class="col-sm-6 col-md-9">
-        <form class="navbar-form" role="search">
-        <div class="input-group" style="display:table;">
-          
-            <input type="text" class="form-control" placeholder="Search" name="q">
-              <span style="width: 1%;" class="input-group-addon"><span class="fa fa-search"></span></span>
-            
+            <a class="navbar-brand" href="#">Ogrenciden Al</a>
         </div>
-        </form>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-     
-      <li>
-                <div class="navbar-btn" style="padding-right: 5px;padding-left: 5px;">
-                    <a href="#" class="btn btn-block btn-default btn-primary">Giriş Yap</a>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <div class="col-sm-6 col-md-9">
+                <form class="navbar-form" role="search">
+                    <div class="input-group" style="display:table;">
+
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <span style="width: 1%;" class="input-group-addon"><span class="fa fa-search"></span></span>
+
+                    </div>
+                </form>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <div class="navbar-btn" style="padding-right: 5px;padding-left: 5px;">
+                        <a href="#" class="btn btn-block btn-default btn-primary" data-toggle="modal" data-target="#login">Giriş Yap</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="navbar-btn" style="padding-right: 5px;padding-left: 5px;">
+                        <a href="#" class="btn btn-block btn-default btn-primary">Eşya Sat !</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">Giriş Yap</h4>
                 </div>
-     </li>
-      <li>
-                <div class="navbar-btn" style="padding-right: 5px;padding-left: 5px;">
-                    <a href="#" class="btn btn-block btn-default btn-primary">Eşya Sat !</a>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <input type="text" class="form-control login-field" value="" placeholder="E-posta adresi giriniz" id="login-name" required="required" />
+                                <label class="login-field-icon fui-mail" for="login-name"></label>
+                                <input type="password" class="form-control login-field" value="" placeholder="Şifre" id="login-pass" />
+                                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" href="#">Giriş yap </button>
+
+                            </div>
+                            <div class="alert alert-danger fui-alert-circle"> E-postanız veya Şifreniz hatalı.</div>
+
+
+
+                        </div>
+                        <div class="col-md-6"><a class="btn btn-block btn-social btn-facebook">
+    <span class="fa fa-facebook-f"></span> Facebook ile giriş yap
+                                                    </a>
+                            <a class="btn btn-block btn-social btn-google">
+    <span class="fa fa-google"></span> Google ile giriş yap
+                                                    </a>
+                        </div>
+                    </div>
                 </div>
-     </li>
-      
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
-  
-<div class="container-full">
-    <div style="padding:0;" class="row">
-        <div style="padding-right:0;"  class="col-md-2 left-navbar">
-          <div style="width: 100%;" class="col-md-10">
-            <div  class="list-group">
-              <a href="#" class="list-group-item active">Cras justo odio</a>
-              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-              <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
-          </div>
-        </div>
-      </div>
-        <div style="padding: 0;" class="col-md-10">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
 
-
-<div id="wrapper">
-  <div id="columns">
-
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/phone.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/camera.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/pc.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/flash.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/laptop.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/phone.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/camera.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/pc.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/flash.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/laptop.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/phone.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/camera.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/pc.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/flash.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-
-    <div style="float: left;" class="pin">
-      <img src="Assets/images/laptop.jpg" alt="Card image cap"/>
-      <h3 class="text-align-center">Phone</h3>
-      <p class="text-align-center">
-        İstanbul
-      </p>
-    </div>
-    
-
-
-  
-   
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
+                </div>
+            </div>
         </div>
     </div>
-</div>
-   
-   
-<!-- Latest compiled and minified JavaScript -->
+    <div class="container-full">
+        <div style="padding:0;" class="row">
+            <div style="padding-right:0;" class="col-md-2 left-navbar">
+                <div style="width: 100%;" class="col-md-10">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Cras justo odio</a>
+                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 0;" class="col-md-10">
 
-<script src="Assets/js/flat-ui.min.js"></script>
-<script src="Assets/js/jquery.min.js"></script>
-<script src="Assets/js/bootstrap.min.js"></script>
-     
+
+                <div id="wrapper">
+                    <div id="columns">
+
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/phone.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/camera.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/pc.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/flash.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/laptop.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/phone.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/camera.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/pc.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/flash.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/laptop.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/phone.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/camera.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/pc.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/flash.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+                        <div style="float: left;" class="pin">
+                            <img src="Assets/images/laptop.jpg" alt="Card image cap" />
+                            <h3 class="text-align-center">Phone</h3>
+                            <p class="text-align-center">
+                                İstanbul
+                            </p>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="Assets/js/flat-ui.min.js"></script>
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
