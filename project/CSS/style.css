@@ -1,0 +1,87 @@
+
+  @media only screen and (max-width:320px){
+    .card-columns {column-count: 1;}
+  }
+  
+  
+  @media only screen and (min-width:769px){
+    .card-columns {column-count: 4;}
+  }
+
+ 
+
+.price-box {
+	margin: 0 auto;
+	height: auto;
+	width: 100%;
+}
+
+
+
+
+
+.ui-slider .ui-slider-handle .glyphicon {
+	color: #FFFFFF;
+	font-size: 13px;
+	opacity: 0.5;
+}
+
+.ui-corner-all {
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+.ui-slider .ui-slider-handle {
+	cursor: pointer;
+}
+
+.ui-slider span,
+.ui-slider span:focus {
+	cursor: pointer;
+	outline: none;
+}
+
+
+
+h4.great {
+	background: #00ac98;
+	
+	padding: 7px 15px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	display: inline-block;
+	
+}
+
+
+.price-slider {
+	margin-bottom: 30px;
+}
+
+.price-slider span {
+	
+	display: inline-block;
+	
+	font-size: 13px;
+}
+
+.form-pricing {
+	background: #ffffff;
+	
+	border-radius: 4px;
+}
+
+#true_tick{display: none;}
+
+
+
+/* HR */
+
+
