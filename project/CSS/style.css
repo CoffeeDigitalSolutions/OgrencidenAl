@@ -78,8 +78,8 @@ h4.great {
 	border-radius: 4px;
 }
 
-#true_tick{display: none;}
-
+.tick{display: none; float: right;}
+.hand{cursor: pointer;}
 
 
 /* HR */

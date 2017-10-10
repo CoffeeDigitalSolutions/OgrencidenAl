@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap-reboot.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <title></title>
    
@@ -16,9 +17,22 @@
 
 <body>
     <script>
-        function click(){
-            document.getElementById("true_tick").style.display = "inline";
-        }
+        //onfocus function nu dene !!!!
+        
+
+        $(function(){
+            var isTick = false;
+           
+                $('[data-complete]').on('click', function(e) {
+                    isTick = true
+                    $(".tick", this).slideToggle("fast");
+                    e.preventDefault();
+                });
+            
+            
+           
+        });
+
     </script>
     <div class="container-full">
        
@@ -56,13 +70,16 @@
         <div style="margin-left: 0;margin-right: 0;" class="row">
             <div style="padding-right:0;" class="col-md-2 left-navbar">
 
-                <div class="list-group">
+                <div  class="list-group">
                     <a href="#" class="list-group-item active">Kategoriler</a>
-                    <a onclick="click()" href="#" class="list-group-item list-group-item-action">Elektronik</a>
-                    <a href="#" class="list-group-item list-group-item-action">Diğer Araçlar ve Yedek Parça <img src="images/tick.png" width="30" alt="tick"></a>
-                    <a href="#" class="list-group-item list-group-item-action">Spor, Eğlence ve Oyunlar <img src="images/tick.png" width="30" alt="tick"></a>
-                    <a onclick="click()" href="#" class="list-group-item list-group-item-action">Ev ve Beyaz Eşya <div id="true_tick"><img src="images/tick.png" width="30" alt="tick"></div></a>
-                    <a href="#" class="list-group-item list-group-item-action">Film Kitap Müzik <img src="images/tick.png" width="30" alt="tick"></a>
+                    
+                    <a data-complete="showTick-1" class="list-group-item list-group-item-action hand">Elektronik <img class="tick"  src="images/tick.png" width="21" alt="tick"/></a>
+                    <a data-complete="showTick-2" class="list-group-item list-group-item-action hand">Yedek Parça <img  class="tick"  src="images/tick.png" width="21" alt="tick"></a>
+                    <a data-complete="showTick-3" class="list-group-item list-group-item-action hand">Spor <img class="tick" src="images/tick.png" width="21" alt="tick"></a>
+                    <a data-complete="showTick-4" class="list-group-item list-group-item-action hand">Eğlence <img class="tick" src="images/tick.png" width="21" alt="tick"></a>
+                    <a data-complete="showTick-5" class="list-group-item list-group-item-action hand">Oyun <img class="tick" src="images/tick.png" width="21" alt="tick"></a>
+                    <a data-complete="showTick-6" class="list-group-item list-group-item-action hand">Ev ve Beyaz Eşya <img class="tick"  src="images/tick.png" width="21" alt="tick"></a>
+                    <a data-complete="showTick-7" class="list-group-item list-group-item-action hand">Film Kitap Müzik <img class="tick" src="images/tick.png" width="21" alt="tick"></a>
 
                     <a href="#" class="list-group-item active">Fiyat Aralığı</a>
                     <span  class="list-group-item">
