@@ -1,85 +1,25 @@
 
-  @media only screen and (max-width:320px){
-    .card-columns {column-count: 1;}
-  }
-  
-  
-  @media only screen and (min-width:769px){
-    .card-columns {column-count: 4;}
-  }
-
- 
-
-.price-box {
-	margin: 0 auto;
-	height: auto;
-	width: 100%;
-}
-
-
-
-
-
-.ui-slider .ui-slider-handle .glyphicon {
-	color: #FFFFFF;
-	font-size: 13px;
-	opacity: 0.5;
-}
-
-.ui-corner-all {
-	border-radius: 20px;
-}
-
-
-
-
-
-
-
-.ui-slider .ui-slider-handle {
-	cursor: pointer;
-}
-
-.ui-slider span,
-.ui-slider span:focus {
-	cursor: pointer;
-	outline: none;
-}
-
-
-
-h4.great {
-	background: #00ac98;
-	
-	padding: 7px 15px;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 600;
-	border-radius: 5px;
-	display: inline-block;
-	
-}
-
-
-.price-slider {
-	margin-bottom: 30px;
-}
-
-.price-slider span {
-	
-	display: inline-block;
-	
-	font-size: 13px;
-}
-
-.form-pricing {
-	background: #ffffff;
-	
-	border-radius: 4px;
-}
-
+  @media only screen and (max-width:320px){.card-columns {column-count: 1;}}
+  @media only screen and (min-width:769px){.card-columns {column-count: 4;}}
+.price-box {margin: 0 auto;height: auto;width: 100%;}
+.ui-slider .ui-slider-handle .glyphicon {color: #FFFFFF;font-size: 13px;opacity: 0.5;}
+.ui-corner-all {border-radius: 20px;}
+.ui-slider .ui-slider-handle {cursor: pointer;}
+.ui-slider span,.ui-slider span:focus {cursor: pointer;outline: none;}
+h4.great {background: #00ac98;padding: 7px 15px;color: #ffffff;font-size: 18px;font-weight: 600;border-radius: 5px;display: inline-block;}
+.price-slider {margin-bottom: 30px;}
+.price-slider span {display: inline-block;font-size: 13px;}
+.form-pricing {background: #ffffff;border-radius: 4px;}
 .tick{display: none; float: right;}
 .hand{cursor: pointer;}
+.container_settings{background-color: #f1f1f1; border-radius: 5px;}
+.product_image{position:relative;}
+.product-item{border-top-left-radius:5px; width: 100%;}
+.product_content{padding: 10px;}
+.time{background-color:rgb(207, 74, 74); padding: 10px;  color:#f1f1f1;; border-radius: 5px;}
+.location{margin-top:15px; color:darkgray;}
+.sellers-info{background-color: black; color:#f1f1f1; width: 100%; padding: 10px;font-size: 20px; opacity:0.6;filter:alpha(opacity=60);margin-top: 25px;;;
+}
 
 
 /* HR */
